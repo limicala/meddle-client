@@ -96,12 +96,13 @@
 	}
 
 	ImClient.prototype.send = function(data) {
-		if(this.socket){
-			this.socket.send(JSON.stringify( {
-				id: 0,
-				data: JSON.stringify(data)
-			}))
-		}
+		// todo
+		// if(this.socket){
+		// 	this.socket.send(JSON.stringify( {
+		// 		id: 0,
+		// 		data: JSON.stringify(data)
+		// 	}))
+		// }
 	};
 
 	ImClient.prototype.close = function() {
